@@ -1,4 +1,4 @@
-package main
+package config
 
 func combineMaps(maps ...map[int]bool) map[int]bool {
 	result := make(map[int]bool)
@@ -79,4 +79,4 @@ var reservedPortsMacos = map[int]bool{
 var reservedPortsLinux = map[int]bool{}
 var reservedPortsWindows = map[int]bool{}
 
-var reservedPorts = combineMaps(reservedPortsMacos, reservedPortsLinux, reservedPortsWindows)
+var ReservedPorts = combineMaps(reservedPortsMacos, reservedPortsLinux, reservedPortsWindows)
