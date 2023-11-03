@@ -9,9 +9,19 @@ When building software locally, it can sometimes be a pain to choose a port numb
 ```bash
 brew tap ozcap/random-port && brew install random-port
 ```
+#### Manual installation (build from source):
+1. Ensure [go is installed globally](https://go.dev/doc/install)
+2. Clone this repository and `cd` into it
+3. Run the `install.sh` script to build and install the binary
+
 
 ### Usage
-To pick a random port
+To pick a random port:
 ```bash
 random-port generate
+```
+
+For help screen:
+```bash
+random-port --help
 ```
