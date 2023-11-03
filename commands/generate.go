@@ -17,7 +17,7 @@ func GenerateAction() cli.ActionFunc {
 	return func(cCtx *cli.Context) error {
 		randomPort := generateRandomPort()
 		prettyPortNumber := color.MagentaString(strconv.Itoa(randomPort))
-		fmt.Printf("Generated random port:\n%s 🔌\n", prettyPortNumber)
+		fmt.Printf("%s 🔌\n", prettyPortNumber)
 		return nil
 	}
 }
