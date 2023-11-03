@@ -14,7 +14,7 @@ const PORT_MAX = 65535
 
 func main() {
 	app := &cli.App{
-		Name:  color.MagentaString("Random Port Generator")		,
+		Name:  color.MagentaString("Random port generator")		,
 		Usage: "Generate random and safe port numbers to use for local development",
 		Commands: []*cli.Command{
 			{
